@@ -2,8 +2,8 @@
   "expo": {
     "name": "DiscipleMe",
     "slug": "DiscipleMe",
-    "version": "1.0.0",
-    "orientation": "portrait",
+    "version": "2.0.0",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -17,10 +17,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "io.disciplemetwo.dwc"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "android": {
+      "package": "com.tjaaronrich.DiscipleMe"
+    },
+    "description": ""
   }
 }
