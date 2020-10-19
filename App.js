@@ -10,7 +10,9 @@ class App extends Component {
   }
 
   hideSpinner() {
-    this.setState({ visible: false });
+    setTimeout(() => {
+      this.setState({ visible: false });
+    }, 9000)
   }
 
   showSpinner() {
@@ -19,17 +21,25 @@ class App extends Component {
 
   render() {
     const url = "http://157.230.11.18:7777/";
+    // const loginOrRegisterUrl = "http://157.230.11.18:7777/login-or-register";
+    // const loginUrl = "http://157.230.11.18:7777/login";
+    // const registerUrl = "http://157.230.11.18:7777/register";
+    const loggedInUrl = "http://157.230.11.18:7777/latest";
+
+    // will need to create links for "forgot login" pages once those are built.
 
     return (
         <View style={styles.view}>
           <WebView 
             style={styles.webview}
             source={{ uri: url }} 
+
+            // this function is currently leaving loading spinner on forever, but could be fixed.
+
             onNavigationStateChange={(event) => {
-              if(event.url !== url) {
-                this.hideSpinner()
-              } else {
+              if(event.url !== loggedInUrl) {
                 this.showSpinner();
+                this.hideSpinner();
               }
             }}
             onLoad={() => this.hideSpinner()}

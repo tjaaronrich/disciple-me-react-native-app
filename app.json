@@ -24,7 +24,9 @@
       "favicon": "./assets/favicon.png"
     },
     "android": {
-      "package": "com.tjaaronrich.DiscipleMe"
+      "package": "com.tjaaronrich.DiscipleMe",
+      "versionCode": 2,
+      "permissions": []
     },
     "description": ""
   }
