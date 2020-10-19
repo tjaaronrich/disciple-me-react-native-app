@@ -21,21 +21,13 @@ class App extends Component {
 
   render() {
     const url = "http://157.230.11.18:7777/";
-    // const loginOrRegisterUrl = "http://157.230.11.18:7777/login-or-register";
-    // const loginUrl = "http://157.230.11.18:7777/login";
-    // const registerUrl = "http://157.230.11.18:7777/register";
     const loggedInUrl = "http://157.230.11.18:7777/latest";
-
-    // will need to create links for "forgot login" pages once those are built.
 
     return (
         <View style={styles.view}>
           <WebView 
             style={styles.webview}
             source={{ uri: url }} 
-
-            // this function is currently leaving loading spinner on forever, but could be fixed.
-
             onNavigationStateChange={(event) => {
               if(event.url !== loggedInUrl) {
                 this.showSpinner();
@@ -57,17 +49,6 @@ class App extends Component {
               size="large"
             />
           )}
-          {/* <ActivityIndicator
-              style={{
-                position: "absolute",
-                left: 0,
-                right: 0,
-                bottom: 0,
-                top: 0,
-              }}
-              color="#1884BA"
-              size="large"
-            /> */}
         </View>
              
     );
