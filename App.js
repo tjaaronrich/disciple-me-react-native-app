@@ -12,7 +12,7 @@ class App extends Component {
   hideSpinner() {
     setTimeout(() => {
       this.setState({ visible: false });
-    }, 9000)
+    })
   }
 
   showSpinner() {
