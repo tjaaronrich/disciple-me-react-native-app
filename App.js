@@ -10,9 +10,7 @@ class App extends Component {
   }
 
   hideSpinner() {
-    setTimeout(() => {
-      this.setState({ visible: false });
-    })
+    this.setState({ visible: false });
   }
 
   showSpinner() {
@@ -31,7 +29,7 @@ class App extends Component {
             onNavigationStateChange={(event) => {
               if(event.url !== loggedInUrl) {
                 this.showSpinner();
-                this.hideSpinner();
+                // this.hideSpinner();
               }
             }}
             onLoad={() => this.hideSpinner()}
