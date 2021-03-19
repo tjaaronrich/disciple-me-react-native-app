@@ -2,7 +2,7 @@
   "expo": {
     "name": "DiscipleMe",
     "slug": "DiscipleMe",
-    "version": "1.0.6",
+    "version": "3.0.6",
     "orientation": "default",
     "icon": "./assets/icon.png",
     "splash": {
