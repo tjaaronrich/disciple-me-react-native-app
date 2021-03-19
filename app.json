@@ -2,7 +2,7 @@
   "expo": {
     "name": "DiscipleMe",
     "slug": "DiscipleMe",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "orientation": "default",
     "icon": "./assets/icon.png",
     "splash": {
@@ -25,7 +25,7 @@
     },
     "android": {
       "package": "com.tjaaronrich.DiscipleMe",
-      "versionCode": 5,
+      "versionCode": 6,
       "permissions": []
     },
     "description": ""
