@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, ActivityIndicator, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 class App extends Component {
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     width: "100%",
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 20,
+    justifyContent: 'center'
   }
 });
